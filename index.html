@@ -1,93 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Curso Javascript</title>
+        <title>Curso de JavaScript</title>
 </head>
-<body>   
-    
-    <!-- EXERCICIO 1 -->
-    <script>    
-        var endereco = {
-            rua: "Rua dos pinheiros",
-            numero: 1293,
-            bairro: "Centro",
-            cidade: "São Paulo",
-            uf: "SP"
-        }
+<body>
+<div>
+    <ul></ul>
 
-        console.log('O usuário mora em ' + endereco.rua 
-        + ' / ' + endereco.uf + ', ' 
-        + 'no bairro ' + endereco.bairro + ', '
-        + 'na rua ' + endereco.rua
-        + ' com nº ' + endereco.numero + '.')
-    
-    </script>
+    <input type="text" placeholder="Digite um todo">
+    <button>Adicionar</button>
 
-    <!-- EXERCICIO 2 -->
-    <script>
-        function pares(x,y){
-            for(x = x; x < y; x++){
-                if(x % 2 == 0 ? console.log(x) : '');
-            }
-        }
-        pares(32,321);
-    </script>
-
-    <!-- EXERCICIO 3 -->
-    <script>     
-        function temHabilidade(skills, texto){            
-            if(skills.indexOf(texto) === -1){
-                console.log('valor não encontrado')
-            }else if(skills.indexOf(texto) > -1){
-                console.log('Valor encontrado')
-            }
-        }
-
-        var skills = ["Javascript", "ReactJS", "React Native"];
-        temHabilidade(skills, 'React');
-    </script>
-
-    <!-- EXERCICIO 4 COM ERRO -->
-    <script>
-        function experiencia(anos){
-            switch(anos){
-                case (anos = 0) || (anos = 1):
-                    console.log('Iniciante');
-                    break;
-                case (anos > 1) || (anos <= 3):
-                    console.log('Intermediário');
-                    break;
-                case (anos > 4) || (anos <= 6):
-                    console.log('Avançado');
-                    break;
-                default:
-                    console.log('Master');
-            }                
-        }
-        var anos = 3;
-        experiencia(anos);
-    </script>
-
-    <!-- EXERCICIO 5 -->
-    <script>
-        var usuarios = [
-            {
-                nome: "Diego",
-                habilidades: ["Javascript", "ReactJS", "Redux"]
-            },
-            {
-                nome: "Gabriel",
-                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
-            }
-        ];
-        
-        for(var usuario of usuarios){
-            console.log('O ' + usuario.nome + ' possui as habilidades: ' + usuario.habilidades);
-        }
-    </script>
-
+    <!-- Script do JavaScript -->
+    <script src="todos.js"></script>
+</div>    
 </body>
 </html>
